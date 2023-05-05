@@ -1,0 +1,70 @@
+@import "../../vars.scss";
+
+.wreath {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wreath img {
+  max-width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.birthday {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+h2 {
+  margin-bottom: 55px;
+  font-family: $great;
+  font-size: 3.125rem;
+  color: $tertiary_wedding;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  font-size: 1.875rem;
+  font-family: $antic;
+  margin-top: 30px;
+  color: $general;
+}
+
+.image-birthday {
+  max-height: 220px;
+  max-width: 220px;
+  box-shadow: -50px -50px 1px -30px $primary_wedding;
+}
+
+@media (max-width: 980px) {
+  h2 {
+    font-size: 2.188rem;
+  }
+
+  .message {
+    font-size: 1.438rem;
+  }
+
+  .image-birthday {
+    max-height: 180px;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

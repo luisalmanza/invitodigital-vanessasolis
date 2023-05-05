@@ -1,0 +1,80 @@
+@import "../../vars.scss";
+
+#xv-carousel {
+  position: absolute;
+  //  margin-top: -80px;
+}
+
+img {
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.first-slide {
+  object-position: 50% 35%;
+}
+
+.second-slide {
+  object-position: 50% 35%;
+}
+
+.third-slide {
+  object-position: 50% 25%;
+}
+
+.carousel-caption {
+  width: 100%;
+  left: 0;
+}
+
+.captions {
+  height: 65px;
+  background-color: rgba(255, 255, 255, 0.8);
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+  font-family: $great;
+  color: $general;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 95px;
+}
+
+h5 {
+  font-family: $great;
+  font-size: 3rem;
+  color: $tertiary_wedding;
+  margin-bottom: 0;
+}
+
+
+// MOBILE DEVICES
+@media (max-width: 980px) {
+  img {
+    height: 700px;
+  }
+
+  .captions {
+    width: 90%;
+    height: 43px;
+    margin-bottom: 40px;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  .first-slide {
+    object-position: 50% 50%;
+  }
+  
+  .second-slide {
+    object-position: 50% 50%;
+  }
+  
+  .third-slide {
+    object-position: 50% 50%;
+  }
+}

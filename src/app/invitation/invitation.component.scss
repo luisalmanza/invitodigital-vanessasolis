@@ -1,0 +1,158 @@
+@import "../../vars.scss";
+
+#birthday-invitation {
+  position: absolute;
+  margin-top: -80px;
+}
+
+.wreath {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wreath img {
+  max-width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+header {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: $great;
+  font-size: 3.125rem;
+  color: $tertiary_wedding;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  font-family: $raleway;
+  color: $general;
+  font-size: 1.125rem;
+  margin: 0px 0 30px;
+}
+
+.data {
+  display: flex;
+  height: 250px;
+  width: 80%;
+  margin: 0 auto 30px;
+}
+
+.ceremony, .reception {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reception {
+ /* width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;*/
+}
+
+.ceremony {
+  border-right: 1px solid $secondary_wedding;
+}
+
+.first {
+  font-family: $antic;
+  color: $general;
+  font-size: 1.875rem;
+  margin-bottom: 15px;
+}
+
+.second, .third {
+  font-family: $raleway;
+  color: $general;
+  font-size: 1.125em;
+  line-height: 1.603rem;
+}
+
+.second {
+  text-align: center;
+  padding: 0 50px;
+}
+
+a {
+  color: white;
+  background-color: $secondary_wedding;
+  width: 30%;
+  font-family: $raleway;
+  text-transform: none;
+  font-size: 1.125rem;
+  margin: 30px 0 0;
+}
+
+@media (max-width: 980px) {
+  header {
+    font-size: 2.188rem;
+  }
+
+  .date {
+    font-size: 0.875rem;
+    margin: 5px 0 30px;
+  }
+
+  .first {
+    font-size: 1.438rem;
+  }
+
+  .second, .third {
+    font-size: 0.875rem;
+    line-height: 1.247rem;
+  }
+
+  a {
+    font-size: 1.125rem;
+  }
+
+  .data {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+
+  .ceremony {
+    border: none;
+  }
+
+  .ceremony, .reception {
+    width: 100%;
+  }
+
+  .reception {
+    margin-top: 50px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  header {
+    margin-top: 0;
+  }
+
+  a {
+    width: 50%;
+  }
+}

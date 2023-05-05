@@ -1,0 +1,39 @@
+<nav class="navbar shadow-0 navbar-expand-sm bg-light navbar-light fixed-top" id="menu">
+  <div class="container-fluid menu">
+    <!-- TOGGLE NAVIGATION -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="(centered.toggle())"
+      aria-controls="navbarMenu"
+      aria-expanded="false"
+      aria-label="Botón de navegación"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- NAVBAR LINKS -->
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarMenu"
+      mdbCollapse
+      #centered="mdbCollapse"
+    >
+
+      <ul class="navbar-nav mb-2 mb-lg-0" style="border-left: 1px solid gray;">
+        <li class="nav-item">
+          <a class="nav-link" (click)="onRedirect(centered.hide(), 'xv-carousel')">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onRedirect(centered.hide(), 'xv-invitation')">Detalles del evento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onRedirect(centered.hide(), 'xv-itinerary')">Itinerario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onRedirect(centered.hide(), 'xv-contact')">WhatsApp</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

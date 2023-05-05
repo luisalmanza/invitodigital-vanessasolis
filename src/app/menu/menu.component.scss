@@ -1,0 +1,39 @@
+@import "../../vars.scss";
+
+.navbar {
+  padding: 0;
+  opacity: 95%;
+}
+
+.menu {
+  padding: 15px 0;
+}
+
+.nav-item {
+  font-family: $raleway;
+  text-transform: none;
+  font-size: 1.125rem;
+  border-right: 1px solid gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+a {
+  font-size: 1rem;
+  color: #6b6b6b !important;
+}
+
+a:hover {
+  color: $secondary_wedding !important;
+  font-weight:900;
+}
+
+li {
+  height: 50px;
+}
+
+@media (max-width: 780px) {
+  a {
+    font-size: 0.875rem;
+  }
+}

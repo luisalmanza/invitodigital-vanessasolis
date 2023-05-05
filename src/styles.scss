@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
+@import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url(/assets/fonts/Raleway/static/Raleway-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: local("Raleway-SemiBold"), url(/assets/fonts/Raleway/static/Raleway-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: local("Raleway-Light"), url(/assets/fonts/Raleway/static/Raleway-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Antic_Didone";
+  src: local("Antic_Didone"), url(/assets/fonts/Antic_Didone/AnticDidone-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Great_Vibes";
+  src: local("Great_Vibes"), url(/assets/fonts/Great_Vibes/GreatVibes-Regular.ttf) format("truetype");
+}

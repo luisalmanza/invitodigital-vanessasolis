@@ -1,0 +1,68 @@
+// FONTS
+
+$raleway: "Raleway", Arial, Helvetica, sans-serif;
+$antic: "Antic_Didone", Arial, Helvetica, sans-serif;
+$saturday: "Saturday_Champagne", Arial, Helvetica, sans-serif;
+$josefin: "Josefin_Slab", Arial, Helvetica, sans-serif;
+
+@mixin title {
+  font-family: $saturday;
+  color: #3F3F27;
+  line-height: 3.375rem;
+}
+
+@mixin title_mobile {
+  @include title;
+  font-size: 2.813rem;
+}
+
+@mixin title_desktop {
+  @include title;
+  font-size: 4.063rem;
+}
+
+@mixin subtitle_mobile {
+  font-family: $antic;
+  font-size: 1.438rem;
+  line-height: 1.688rem;
+  color: #3F3F27;
+}
+
+@mixin subtitle_desktop {
+  font-family: $antic;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #3F3F27;
+}
+
+@mixin text {
+  font-family: $josefin;
+  color: #3F3F27;
+}
+
+@mixin text_mobile {
+  @include text;
+  font-size: 0.938rem;
+  line-height: 1.25rem;
+}
+
+@mixin text_desktop {
+  @include text;
+  font-size: 1.25rem;
+  line-height: 1.4rem;
+}
+
+// BUTTONS
+@mixin button {
+  font-family: $raleway;
+  text-transform: none;
+  font-size: 1.125rem;
+  color: $secondary;
+  background-color: #D8D8C0;
+}
+
+// COLORS
+$general: #333333;
+$primary: #F5F5EF;
+$secondary: #3F3F27;
+$tertiary: #7F7E4D;
