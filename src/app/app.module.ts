@@ -16,10 +16,7 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { CollageComponent } from './collage/collage.component';
 import { InvitationComponent } from './invitation/invitation.component';
 import { ItineraryComponent } from './itinerary/itinerary.component';
-import { PeopleComponent } from './people/people.component';
 import { Collage2Component } from './collage2/collage2.component';
-import { GodparentsComponent } from './godparents/godparents.component';
-import { Godparents2Component } from './godparents2/godparents2.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
@@ -34,10 +31,7 @@ import { MenuComponent } from './menu/menu.component';
     CollageComponent,
     InvitationComponent,
     ItineraryComponent,
-    PeopleComponent,
     Collage2Component,
-    GodparentsComponent,
-    Godparents2Component,
     ContactComponent,
     FooterComponent,
     MenuComponent
